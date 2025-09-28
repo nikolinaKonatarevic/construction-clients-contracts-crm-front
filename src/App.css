@@ -14,15 +14,91 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ce845a;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  padding: 0 20px;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
+  font-family: "JetBrains Mono", monospace;
+  position: relative;
+  height: 75px; 
+  width: 100%; /* da zauzme punu širinu ekrana */
+  box-sizing: border-box;
 }
+
+.header {
+  display: flex;
+  flex-direction: row; /* default, ali da bude jasno */
+  align-items: flex-end;
+  gap: 100px;
+}
+
+.header-menu {
+  position: relative;
+}
+
+.header-h1 {
+ font-size: 14px;
+ margin: 0;
+}
+
+.header-h2 {
+ font-size: 12px;
+ margin: 0;
+}
+
+.menu-button {
+  background-color: #8b7355; /* brown */
+  margin-right: 15px;
+  margin-left: auto;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  position: relative;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.menu-button:hover {
+  background-color: #6b5845;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;   /* otvara se ispod dugmeta sa desne strane */
+  top: 40px;
+  background: #fffaf0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 160px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+.dropdown-menu li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0e5d8;
+}
+
+.dropdown-menu a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
 
 .App-link {
   color: #61dafb;
