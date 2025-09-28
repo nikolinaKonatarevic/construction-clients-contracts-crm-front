@@ -1,0 +1,30 @@
+.contract-list-container {
+  padding: 20px;
+  font-family: "JetBrains Mono", monospace;
+  background-color: #fdfaf6;
+}
+
+.contract-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.contract-table th, .contract-table td {
+  border: 1px solid #8b7355;
+  padding: 10px;
+  text-align: center;
+}
+
+.contract-table th {
+  background-color: #d4b483;
+  color: black;
+}
+
+.contract-table tr:nth-child(even) {
+  background-color: #f5f5dc;
+}
+
+.contract-table tr:hover {
+  background-color: #f0e5d8;
+}
