@@ -1,0 +1,51 @@
+.update-customer-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #f5f5dc; /* beige */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: "JetBrains Mono", monospace;
+  color: #000;
+}
+
+.update-customer-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.update-customer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.update-customer-form input {
+  padding: 10px;
+  border: 1px solid #8b5e3c; /* brown border */
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.update-customer-form input:focus {
+  outline: none;
+  border-color: #5c4033; /* darker brown */
+  box-shadow: 0 0 5px rgba(92, 64, 51, 0.5);
+}
+
+.update-customer-form button {
+  background-color: #8b5e3c; /* brown */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.update-customer-form button:hover {
+  background-color: #5c4033; /* darker brown */
+  transform: scale(1.03);
+}

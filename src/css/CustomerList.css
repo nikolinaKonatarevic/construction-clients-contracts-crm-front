@@ -1,0 +1,128 @@
+.customer-list-container {
+  background-color: #f5f5dc; /* svetlo bež */
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: "JetBrains Mono", monospace;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centriranje tabele */
+}
+
+.customer-list-container h2 {
+  margin-bottom: 30px;
+  color: #3e2f1c; /* tamno braon */
+  font-size: 28px;
+}
+
+.customer-table {
+  width: 90%; /* veća tabela */
+  max-width: 1200px;
+  border-collapse: collapse;
+  background: #fffaf0;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid #8b5e3c; /* jasno vidljive ivice */
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 15px 20px;
+  border: 2px solid #8b5e3c; /* ivice ćelija */
+  text-align: center;
+}
+
+.customer-table th {
+  background-color: #deb887; /* braon header */
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.customer-table tr:nth-child(even) {
+  background-color: #fdf5e6; /* svetlija nijansa za redove */
+}
+
+.customer-table tr:hover {
+  background-color: #f0e68c; /* hover highlight */
+}
+
+.customer-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.customer-actions a,
+.customer-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+}
+
+/* Dugme za edit */
+.customer-actions a {
+  background-color: #deb887;
+  color: black;
+  border: 1px solid #cdaa7d;
+}
+
+.customer-actions a:hover {
+  background-color: #cdaa7d;
+  color: white;
+}
+
+/* Dugme za delete */
+.customer-actions button {
+  background-color: #8b4513; /* tamno braon */
+  color: white;
+  border: 1px solid #5c4033;
+}
+
+.customer-actions button:hover {
+  background-color: #a0522d;
+  transform: scale(1.05); /* blagi efekat */
+}
+
+.home-button {
+  background: linear-gradient(135deg, #deb887, #cdaa7d);
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "JetBrains Mono", monospace;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background: linear-gradient(135deg, #cdaa7d, #deb887);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  color: black;
+}
+
+.home-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.customer-list-header {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
