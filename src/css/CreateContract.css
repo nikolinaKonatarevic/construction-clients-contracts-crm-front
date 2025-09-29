@@ -1,0 +1,92 @@
+.create-contract {
+  background-color: #b0c4de; /* svetloplava */
+  padding: 20px;
+  min-height: 100vh;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.create-contract h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f4f4f;
+}
+
+.contract-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contract-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contract-form input,
+.contract-form select,
+.contract-form textarea {
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contract-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* Sekcija članova */
+.contract-form h3 {
+  grid-column: span 2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contract-form button {
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contract-form button:hover {
+  background-color: #315f7d;
+}
+
+.clause-table {
+  grid-column: span 2;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.clause-table th,
+.clause-table td {
+  border: 1px solid #888;
+  padding: 8px;
+  text-align: left;
+}
+
+.clause-table th {
+  background-color: #87a9c2;
+  color: white;
+}
+
+.clause-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+

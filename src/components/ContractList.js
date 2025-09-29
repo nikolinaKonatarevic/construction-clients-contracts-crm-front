@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import { getContracts } from "../services/contractService";
 import { getCustomerById } from "../services/customerService";
 import { getCompanyById } from "../services/companyService.js";
+import { useNavigate } from "react-router-dom";
 import "../css/ContractList.css";
 
 function ContractList() {
   const [contracts, setContracts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getContracts()
@@ -27,6 +29,10 @@ function ContractList() {
       .catch((err) => console.error("Error fetching contracts:", err));
   }, []);
 
+   const handleEdit = (id) => {
+     navigate(`/contracts/edit/${id}`);
+  };
+
   return (
     <div className="contract-list-container">
       <h2>Contracts</h2>
@@ -41,6 +47,7 @@ function ContractList() {
             <th>Address</th>
             <th>Company</th>
             <th>Customer</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -54,6 +61,14 @@ function ContractList() {
               <td>{c.address}</td>
               <td>{c.companyName}</td>
               <td>{c.customerName}</td>
+               <td>
+                <button
+                  className="edit-btn"
+                  onClick={() => handleEdit(c.id)}
+                >
+                  Edit
+                </button>
+                </td>
             </tr>
           ))}
         </tbody>

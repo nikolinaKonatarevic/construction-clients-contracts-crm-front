@@ -6,7 +6,10 @@ import CustomerList from "./components/CustomerList";
 import CreateCustomer from './components/CreateCustomer';
 import UpdateCustomer from './components/UpdateCustomer';
 import ContractList from "./components/ContractList";
+import EditContract from "./components/UpdateContract"; 
+import CreateContract from './components/CreateContract';
 import { useState } from "react";
+
 
 function App() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -30,6 +33,7 @@ function App() {
                 <li><Link to="/customers">View Customers</Link></li>
                 <li><Link to="/create">Create Customer</Link></li>
                 <li><Link to="/contracts">View Contracts</Link></li>
+                <li><Link to="/contracts/create">Create Contract</Link></li>
               </ul>
             )}
           </div>
@@ -40,6 +44,8 @@ function App() {
             <Route path="/create" element={<CreateCustomer />} />
             <Route path="/edit/:id" element={<UpdateCustomer />} /> 
             <Route path="/contracts" element={<ContractList />} />
+            <Route path="/contracts/create" element={<CreateContract />} />
+            <Route path="/contracts/edit/:id" element={<EditContract />} />
           </Routes>
         </div>
       </BrowserRouter>
